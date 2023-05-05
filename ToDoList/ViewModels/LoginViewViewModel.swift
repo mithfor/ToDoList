@@ -15,9 +15,15 @@ class LoginViewViewModel: ObservableObject {
     init() {}
     
     func login() {
+        errorMessage = ""
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else {
-            errorMessage = "Fill in email and password"
+            errorMessage = "Plaese fill in email and password."
+            return
+        }
+        
+        guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter valid email."
             return
         }
     }
