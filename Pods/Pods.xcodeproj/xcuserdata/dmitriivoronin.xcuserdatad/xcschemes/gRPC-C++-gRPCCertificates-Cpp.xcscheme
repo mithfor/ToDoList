@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B8CAC3956E59F928387D0C6310E3B37"
-               BuildableName = "gRPC-C++-gRPCCertificates-Cpp.bundle"
+               BuildableName = "gRPCCertificates-Cpp.bundle"
                BlueprintName = "gRPC-C++-gRPCCertificates-Cpp"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

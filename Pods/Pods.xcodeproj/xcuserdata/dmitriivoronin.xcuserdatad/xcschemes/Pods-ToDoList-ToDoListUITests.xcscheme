@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2CEE31DA0C2DC2A87B5D00B18B637A35"
-               BuildableName = "Pods-ToDoList-ToDoListUITests.framework"
+               BuildableName = "Pods_ToDoList_ToDoListUITests.framework"
                BlueprintName = "Pods-ToDoList-ToDoListUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

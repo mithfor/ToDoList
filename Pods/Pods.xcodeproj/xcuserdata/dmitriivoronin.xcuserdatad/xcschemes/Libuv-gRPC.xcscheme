@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "69AA1CD97ADEF721EFB8D16AF3E96CDE"
-               BuildableName = "Libuv-gRPC.framework"
+               BuildableName = "uv.framework"
                BlueprintName = "Libuv-gRPC"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
