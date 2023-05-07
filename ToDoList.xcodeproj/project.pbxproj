@@ -37,6 +37,7 @@
 		88B236532A03DF54003ADCFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88B236522A03DF54003ADCFE /* GoogleService-Info.plist */; };
 		88BB50FD2A0785380086969E /* LoginViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB50FC2A0785380086969E /* LoginViewViewModelTests.swift */; };
 		88BB51062A07980F0086969E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51052A07980F0086969E /* String+Ext.swift */; };
+		88BB510A2A0799500086969E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51092A0799500086969E /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		88B236522A03DF54003ADCFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88BB50FC2A0785380086969E /* LoginViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModelTests.swift; sourceTree = "<group>"; };
 		88BB51052A07980F0086969E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		88BB51092A0799500086969E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		88B236272A03DB2C003ADCFE /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				88BB51072A0799200086969E /* Constants */,
 				88BB51042A0797F20086969E /* Extensions */,
 				88500DB22A04D7B500F311BD /* Other */,
 				88500DB12A04D79300F311BD /* Models */,
@@ -231,6 +234,14 @@
 				88BB51052A07980F0086969E /* String+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88BB51072A0799200086969E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				88BB51092A0799500086969E /* AppConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 				88500DD42A04E57100F311BD /* HeaderView.swift in Sources */,
 				88B2362B2A03DB2C003ADCFE /* MainView.swift in Sources */,
 				88500DD02A04DB7300F311BD /* RegisterViewViewModel.swift in Sources */,
+				88BB510A2A0799500086969E /* AppConstants.swift in Sources */,
 				88500DC62A04DAD600F311BD /* MainViewViewModel.swift in Sources */,
 				88500DB42A04D8EA00F311BD /* ProfileView.swift in Sources */,
 				88500DBE2A04DA0800F311BD /* RegisterView.swift in Sources */,

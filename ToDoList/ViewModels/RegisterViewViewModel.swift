@@ -5,6 +5,7 @@
 //  Created by Dmitrii Voronin on 05.05.2023.
 //
 
+import FirebaseAuth
 import Foundation
 
 class RegisterViewViewModel: ObservableObject {
@@ -19,6 +20,21 @@ class RegisterViewViewModel: ObservableObject {
         guard validate() else {
             return
         }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            guard let userId = result?.user.uid else {
+                self?.errorMessage = "\(String(describing: error?.localizedDescription))"
+                return
+            }
+            self?.insertUserRecord(id: userId)
+        }
+    }
+    
+    private func insertUserRecord(id: String) {
+        let newUser = User(name: name,
+                           email: email,
+                           id: id,
+                           joined: Date().timeIntervalSince1970)
     }
     
     private func validate() -> Bool {
@@ -32,6 +48,11 @@ class RegisterViewViewModel: ObservableObject {
         
         guard email.isValidEmail() else {
             errorMessage = "Please enter valid email."
+            return false
+        }
+        
+        guard password.count >= AppConstants.minPasswordSymbolsCount else {
+            errorMessage = "Password must contain at least \(AppConstants.minPasswordSymbolsCount) characters!"
             return false
         }
         
