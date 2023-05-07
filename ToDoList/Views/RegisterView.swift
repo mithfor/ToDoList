@@ -19,6 +19,12 @@ struct RegisterView: View {
                        background: .orange)
             
             Form {
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(.red)
+                        .font(.system(size: 16))
+                }
+                
                 TextField("Full Name", text: $viewModel.name)
                     .textFieldStyle(.automatic)
                     .autocorrectionDisabled()
@@ -33,8 +39,7 @@ struct RegisterView: View {
                 
                 TLButton(title: "Create Account",
                          background: .green) {
-                            //Attempt registration
-                        }
+                    viewModel.register()                        }
             }
             .offset(y: -50)
             
