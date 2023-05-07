@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+///ViewModel for profile view
+///Secondary tab
+class ProfileViewViewModel: ObservableObject {
+    init() {}
+}
