@@ -6,6 +6,7 @@
 //
 
 import FirebaseAuth
+import FirebaseFirestore
 import Foundation
 
 class RegisterViewViewModel: ObservableObject {
@@ -35,6 +36,12 @@ class RegisterViewViewModel: ObservableObject {
                            email: email,
                            id: id,
                            joined: Date().timeIntervalSince1970)
+        
+        let database = Firestore.firestore()
+        
+        database.collection("users")
+            .document(id)
+            .setData(newUser.asDictionary())
     }
     
     private func validate() -> Bool {

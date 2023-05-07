@@ -38,6 +38,7 @@
 		88BB50FD2A0785380086969E /* LoginViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB50FC2A0785380086969E /* LoginViewViewModelTests.swift */; };
 		88BB51062A07980F0086969E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51052A07980F0086969E /* String+Ext.swift */; };
 		88BB510A2A0799500086969E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51092A0799500086969E /* AppConstants.swift */; };
+		88BB510C2A079DC00086969E /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB510B2A079DC00086969E /* Encodable+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		88BB50FC2A0785380086969E /* LoginViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModelTests.swift; sourceTree = "<group>"; };
 		88BB51052A07980F0086969E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		88BB51092A0799500086969E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		88BB510B2A079DC00086969E /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				88BB51052A07980F0086969E /* String+Ext.swift */,
+				88BB510B2A079DC00086969E /* Encodable+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				88500DBA2A04D9C500F311BD /* LoginView.swift in Sources */,
 				88500DD42A04E57100F311BD /* HeaderView.swift in Sources */,
 				88B2362B2A03DB2C003ADCFE /* MainView.swift in Sources */,
+				88BB510C2A079DC00086969E /* Encodable+Ext.swift in Sources */,
 				88500DD02A04DB7300F311BD /* RegisterViewViewModel.swift in Sources */,
 				88BB510A2A0799500086969E /* AppConstants.swift in Sources */,
 				88500DC62A04DAD600F311BD /* MainViewViewModel.swift in Sources */,
