@@ -1,18 +1,20 @@
 //
-//  ToDoListTests.swift
+//  LoginViewViewModelTests.swift
 //  ToDoListTests
 //
-//  Created by Dmitrii Voronin on 04.05.2023.
+//  Created by Dmitrii Voronin on 07.05.2023.
 //
 
 import XCTest
+@testable import ToDoList
 
-//@testable import ToDoList
-
-final class ToDoListTests: XCTestCase {
+final class LoginViewViewModelTests: XCTestCase {
+    var sut: LoginViewViewModel!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        sut = LoginViewViewModel()
     }
 
     override func tearDownWithError() throws {
