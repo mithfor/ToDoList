@@ -32,7 +32,7 @@ struct ToDoListView: View {
                 
             }
             .sheet(isPresented: $viewModel.showingNewItemView) {
-                NewItemView()
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
             }
         }
     }

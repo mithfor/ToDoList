@@ -9,9 +9,8 @@ import SwiftUI
 
 struct NewItemView: View {
     @StateObject var viewModel = NewItemViewViewModel()
-    
-    init() {}
-    
+    @Binding var newItemPresented: Bool
+        
     var body: some View {
         VStack {
             Text("New Item")
@@ -38,15 +37,22 @@ struct NewItemView: View {
                 TLButton(title: "Save",
                          background: .pink) {
                     viewModel.save()
+                    newItemPresented = false
                 }
                          .padding()
             }
+
         }
     }
 }
 
 struct NewItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewItemView()
+        NewItemView(newItemPresented: Binding(get: {
+            return true
+        }, set: { _ in
+            
+        }))
+        
     }
 }
