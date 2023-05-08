@@ -13,7 +13,35 @@ struct NewItemView: View {
     init() {}
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("New Item")
+                .font(.system(size: 32))
+                .bold()
+                .padding()
+            
+            Form {
+                // Title
+                TextField("Title", text: $viewModel.title)
+                    .textFieldStyle(.plain)
+                
+                TextField("Description", text: $viewModel.description)
+                    .textFieldStyle(.plain)
+                
+                // Due Date
+                DatePicker("Due Date",
+                           selection: $viewModel.dueDate,
+                           displayedComponents: [.date, .hourAndMinute])
+                .datePickerStyle(.graphical)
+                
+                // Button
+                
+                TLButton(title: "Save",
+                         background: .pink) {
+                    viewModel.save()
+                }
+                         .padding()
+            }
+        }
     }
 }
 
