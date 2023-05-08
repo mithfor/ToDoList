@@ -9,4 +9,5 @@ import Foundation
 
 struct AppConstants {
     static let minPasswordSymbolsCount:Int = 6
+    static let numberOfSecondsIn24H: Double = 86400
 }
