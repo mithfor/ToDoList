@@ -7,7 +7,7 @@
 
 import XCTest
 
-//@testable import ToDoList
+@testable import ToDoList
 
 final class ToDoListTests: XCTestCase {
 
