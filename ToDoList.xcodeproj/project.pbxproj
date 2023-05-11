@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88250DB42A0D3439001C8CC6 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88250DB32A0D3439001C8CC6 /* KeyboardHandler.swift */; };
+		88250DB62A0D37C8001C8CC6 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88250DB52A0D37C8001C8CC6 /* CreateAccountView.swift */; };
+		88250DB82A0D48A5001C8CC6 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88250DB72A0D48A5001C8CC6 /* LogoutView.swift */; };
 		88500DA82A04D0E000F311BD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 88500DA72A04D0E000F311BD /* FirebaseAuth */; };
 		88500DAA2A04D0E000F311BD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 88500DA92A04D0E000F311BD /* FirebaseFirestore */; };
 		88500DAC2A04D0E000F311BD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88500DAB2A04D0E000F311BD /* FirebaseFirestoreSwift */; };
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88250DB32A0D3439001C8CC6 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		88250DB52A0D37C8001C8CC6 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		88250DB72A0D48A5001C8CC6 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		88500DB32A04D8EA00F311BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		88500DB52A04D90700F311BD /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		88500DB72A04D98200F311BD /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
@@ -127,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88250DB22A0D3424001C8CC6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				88250DB32A0D3439001C8CC6 /* KeyboardHandler.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		88500DAF2A04D76200F311BD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +153,8 @@
 				88500DBD2A04DA0800F311BD /* RegisterView.swift */,
 				88500DD32A04E57100F311BD /* HeaderView.swift */,
 				88500DD72A04F65C00F311BD /* TLButton.swift */,
+				88250DB52A0D37C8001C8CC6 /* CreateAccountView.swift */,
+				88250DB72A0D48A5001C8CC6 /* LogoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +216,7 @@
 		88B236272A03DB2C003ADCFE /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				88250DB22A0D3424001C8CC6 /* Common */,
 				88BB51072A0799200086969E /* Constants */,
 				88BB51042A0797F20086969E /* Extensions */,
 				88500DB22A04D7B500F311BD /* Other */,
@@ -411,15 +428,18 @@
 				88500DBA2A04D9C500F311BD /* LoginView.swift in Sources */,
 				88500DD42A04E57100F311BD /* HeaderView.swift in Sources */,
 				88B2362B2A03DB2C003ADCFE /* MainView.swift in Sources */,
+				88250DB42A0D3439001C8CC6 /* KeyboardHandler.swift in Sources */,
 				88BB510C2A079DC00086969E /* Encodable+Ext.swift in Sources */,
 				88500DD02A04DB7300F311BD /* RegisterViewViewModel.swift in Sources */,
 				88BB510A2A0799500086969E /* AppConstants.swift in Sources */,
+				88250DB82A0D48A5001C8CC6 /* LogoutView.swift in Sources */,
 				88500DC62A04DAD600F311BD /* MainViewViewModel.swift in Sources */,
 				88500DB42A04D8EA00F311BD /* ProfileView.swift in Sources */,
 				88500DBE2A04DA0800F311BD /* RegisterView.swift in Sources */,
 				88500DD82A04F65C00F311BD /* TLButton.swift in Sources */,
 				88500DC82A04DAF700F311BD /* ProfileViewViewModel.swift in Sources */,
 				88500DB62A04D90700F311BD /* ToDoListView.swift in Sources */,
+				88250DB62A0D37C8001C8CC6 /* CreateAccountView.swift in Sources */,
 				88500DC22A04DA9700F311BD /* User.swift in Sources */,
 				88500DD22A04DBA700F311BD /* ToDoListItemViewViewModel.swift in Sources */,
 				88500DC02A04DA7800F311BD /* ToDoListItemView.swift in Sources */,

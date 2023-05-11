@@ -11,9 +11,11 @@ struct LoginView: View {
     
     @StateObject var viewModel = LoginViewViewModel()
     
+    @StateObject private var keyboardHandler = KeyboardHandler()
+    
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
+//            ScrollView(.vertical) {
                 
                 VStack {
                     // Header
@@ -40,24 +42,22 @@ struct LoginView: View {
                                  background: .blue) {
                             viewModel.login()
                         }
+
                     }
                     .offset(y: -100)
                     .frame(width: UIScreen.main.bounds.width,
                            height: 200)
                     
                     // Create Account
-                    VStack {
-                        Text("New around here?")
-                        
-                        NavigationLink("Create An Account",
-                                       destination: RegisterView())
-                    }
-                    .padding(.bottom, 50)
+                    CreateAccountView()
                     
                     Spacer()
                 }
+
                 
-            }
+//            }
+                .offset(y: -keyboardHandler.keyboardHeight / 2)
+            .animation(.default, value: keyboardHandler.keyboardHeight)
         }
     }
 }
