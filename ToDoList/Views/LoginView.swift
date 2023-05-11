@@ -13,44 +13,50 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                // Header
-                HeaderView(title: "To Do List",
-                           subtitle: "Get things done",
-                           angle: 15,
-                           background: .pink)
+            ScrollView(.vertical) {
                 
-                Form {
-                    if !viewModel.errorMessage.isEmpty {
-                        Text(viewModel.errorMessage)
-                            .foregroundColor(.red)
-                            .font(.system(size: 16))
-                    }
-                    
-                    TextField("Email Address", text: $viewModel.email)
-                        .textFieldStyle(.automatic)
-                        .autocorrectionDisabled()
-                    
-                    SecureField("Password", text: $viewModel.password)
-                        .textFieldStyle(.automatic)
-                    
-                    TLButton(title: "Log In",
-                             background: .blue) {
-                        viewModel.login()
-                    }
-                }
-                .offset(y: -50)
-                
-                // Create Account
                 VStack {
-                    Text("New around here?")
-
-                    NavigationLink("Create An Account",
-                                   destination: RegisterView())
+                    // Header
+                    HeaderView(title: "To Do List",
+                               subtitle: "Get things done",
+                               angle: 15,
+                               background: .pink)
+                    
+                    Form {
+                        if !viewModel.errorMessage.isEmpty {
+                            Text(viewModel.errorMessage)
+                                .foregroundColor(.red)
+                                .font(.system(size: 16))
+                        }
+                        
+                        TextField("Email Address", text: $viewModel.email)
+                            .textFieldStyle(.automatic)
+                            .autocorrectionDisabled()
+                        
+                        SecureField("Password", text: $viewModel.password)
+                            .textFieldStyle(.automatic)
+                        
+                        TLButton(title: "Log In",
+                                 background: .blue) {
+                            viewModel.login()
+                        }
+                    }
+                    .offset(y: -100)
+                    .frame(width: UIScreen.main.bounds.width,
+                           height: 200)
+                    
+                    // Create Account
+                    VStack {
+                        Text("New around here?")
+                        
+                        NavigationLink("Create An Account",
+                                       destination: RegisterView())
+                    }
+                    .padding(.bottom, 50)
+                    
+                    Spacer()
                 }
-                .padding(.bottom, 50)
                 
-                Spacer()
             }
         }
     }
