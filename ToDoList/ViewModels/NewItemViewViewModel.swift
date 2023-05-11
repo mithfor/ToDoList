@@ -39,9 +39,9 @@ class NewItemViewViewModel: ObservableObject {
         
         // Save model
         let database = Firestore.firestore()
-        database.collection("users")
+        database.collection(AppConstants.Firebase.collection)
             .document(userId)
-            .collection("todos")
+            .collection(AppConstants.Firebase.innerCollection)
             .document(newId)
             .setData(newItem.asDictionary())
     }
