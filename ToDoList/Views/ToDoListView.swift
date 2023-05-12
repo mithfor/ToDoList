@@ -13,7 +13,7 @@ struct ToDoListView: View {
     
     init(userId: String) {
         // users/<id>/todos/<entries>
-        self._items = FirestoreQuery(collectionPath: "\(AppConstants.Firebase.collection)/\(userId)/\(AppConstants.Firebase.innerCollection)")
+        self._items = FirestoreQuery(collectionPath: "\(AppConstants.FirebaseFirestore.collection)/\(userId)/\(AppConstants.FirebaseFirestore.innerCollection)")
         self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId))
     }
     
