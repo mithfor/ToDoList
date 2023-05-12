@@ -11,11 +11,13 @@ struct LoginView: View {
     
     @StateObject var viewModel = LoginViewViewModel()
     
+    @State private var animationAmount = 1.0
+    
     @StateObject private var keyboardHandler = KeyboardHandler()
     
     var body: some View {
         NavigationView {
-//            ScrollView(.vertical) {
+            ScrollView(.vertical) {
                 
                 VStack {
                     // Header
@@ -43,7 +45,7 @@ struct LoginView: View {
                             viewModel.login()
                         }
 
-                    }
+                    } // Form
                     .offset(y: -100)
                     .frame(width: UIScreen.main.bounds.width,
                            height: 200)
@@ -55,9 +57,9 @@ struct LoginView: View {
                 }
 
                 
-//            }
-                .offset(y: -keyboardHandler.keyboardHeight / 2)
-            .animation(.default, value: keyboardHandler.keyboardHeight)
+            }
+                .offset(y: -keyboardHandler.keyboardHeight / 16)
+            .animation(.default, value: animationAmount)
         }
     }
 }
