@@ -15,4 +15,15 @@ struct AppConstants {
         static let collection: String = "users"
         static let innerCollection: String = "todos"
     }
+    
+    struct TabBar {
+        struct Titles {
+            static let home: String = "Home"
+            static let profile: String = "Profile"
+        }
+        
+        struct Images {
+            static let home: String = "house"
+            static let profile: String = "person.circle"       }
+    }
 }

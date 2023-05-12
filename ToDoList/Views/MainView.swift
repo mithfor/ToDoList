@@ -22,11 +22,12 @@ struct MainView: View {
         TabView {
             ToDoListView(userId: viewModel.currentUserId)
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label(AppConstants.TabBar.Titles.home,
+                          systemImage: AppConstants.TabBar.Images.home)
                 }
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "person.circle")
+                    Label(AppConstants.TabBar.Titles.profile, systemImage: AppConstants.TabBar.Images.profile)
                     
                 }
         }
