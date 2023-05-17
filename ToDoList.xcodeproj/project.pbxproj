@@ -165,10 +165,10 @@
 				88500DC52A04DAD600F311BD /* MainViewViewModel.swift */,
 				88500DC72A04DAF700F311BD /* ProfileViewViewModel.swift */,
 				88500DC92A04DB2D00F311BD /* ToDoListViewViewModel.swift */,
+				88500DD12A04DBA700F311BD /* ToDoListItemViewViewModel.swift */,
 				88500DCB2A04DB4E00F311BD /* NewItemViewViewModel.swift */,
 				88500DCD2A04DB5D00F311BD /* LoginViewViewModel.swift */,
 				88500DCF2A04DB7300F311BD /* RegisterViewViewModel.swift */,
-				88500DD12A04DBA700F311BD /* ToDoListItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
