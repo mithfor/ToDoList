@@ -48,7 +48,7 @@ struct LoginView: View {
                     } // Form
                     .offset(y: -100)
                     .frame(width: UIScreen.main.bounds.width,
-                           height: 200)
+                           height: 250)
                     
                     // Create Account
                     CreateAccountView()

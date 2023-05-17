@@ -41,6 +41,7 @@
 		88BB51062A07980F0086969E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51052A07980F0086969E /* String+Ext.swift */; };
 		88BB510A2A0799500086969E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB51092A0799500086969E /* AppConstants.swift */; };
 		88BB510C2A079DC00086969E /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB510B2A079DC00086969E /* Encodable+Ext.swift */; };
+		88FBE8E72A14A3550088F541 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FBE8E62A14A3550088F541 /* Launch Screen.storyboard */; };
 		88FBFCEA2A0BC38600735A3F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 88FBFCE92A0BC38600735A3F /* FirebaseAuth */; };
 		88FBFCEC2A0BC38600735A3F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 88FBFCEB2A0BC38600735A3F /* FirebaseFirestore */; };
 		88FBFCEE2A0BC38600735A3F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88FBFCED2A0BC38600735A3F /* FirebaseFirestoreSwift */; };
@@ -98,6 +99,7 @@
 		88BB51052A07980F0086969E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		88BB51092A0799500086969E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		88BB510B2A079DC00086969E /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
+		88FBE8E62A14A3550088F541 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				88B2362C2A03DB2E003ADCFE /* Assets.xcassets */,
 				88B236282A03DB2C003ADCFE /* ToDoListApp.swift */,
 				88B236522A03DF54003ADCFE /* GoogleService-Info.plist */,
+				88FBE8E62A14A3550088F541 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			files = (
 				88B236302A03DB2E003ADCFE /* Preview Assets.xcassets in Resources */,
 				88B2362D2A03DB2E003ADCFE /* Assets.xcassets in Resources */,
+				88FBE8E72A14A3550088F541 /* Launch Screen.storyboard in Resources */,
 				88B236532A03DF54003ADCFE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +628,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,6 +659,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
